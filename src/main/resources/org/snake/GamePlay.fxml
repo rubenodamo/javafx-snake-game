@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400" prefWidth="600" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.snake.view.GameView">
+   <Pane fx:id="canvasPane" prefHeight="400" prefWidth="600" style="-fx-background-color: #fad02c;">
+      <Canvas fx:id="canvas" height="390" layoutX="5.0" layoutY="5.0" width="590"/>
+      <Pane fx:id="pausePane" layoutX="62.0" layoutY="54.0" opacity="0.5" prefHeight="292.0" prefWidth="477.0"
+            style="-fx-background-color: bad3e4;" visible="false">
+         <Label layoutX="174.0" layoutY="146.0" text="PAUSED">
+            <font>
+               <Font name="Avenir Next Condensed Bold" size="48.0"/>
+            </font>
+         </Label>
+         <Label layoutX="192.0" layoutY="210.0" text="Press 'P' to Play">
+            <font>
+               <Font name="Avenir Book" size="16.0"/>
+            </font>
+         </Label>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" height="93.0" layoutX="216.0" layoutY="53.0" stroke="BLACK"
+                    strokeType="INSIDE" width="21.0"/>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" height="93.0" layoutX="259.0" layoutY="53.0" stroke="BLACK"
+                    strokeType="INSIDE" width="21.0"/>
+      </Pane>
+      <Label layoutX="30.0" layoutY="54.0" opacity="0.52" text="Press 'P' to pause">
+         <font>
+            <Font name="Avenir Next Condensed Bold" size="13.0"/>
+         </font>
+      </Label>
+   </Pane>
+</AnchorPane>
